@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Programacion</title>
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href=link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <!--CUSTOM-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <img src="data:image/png;base64,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"
+                alt="Bootcamp logo" class="nav-brand">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Elementos</a>
+                </li>
+                <li>
+                    <a href="#">Tutoriales</a>
+                </li>
+                <li>
+                    <a href="#">Clases Online</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                        </i>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <!--SHOWCASE-->
+        <header class="showcase">
+            <h2>Bienvenidos A Todos</h2>
+            <p>En esta seccion de pagina web publicare contenido para que la gente que desea empezar desde cero a programar y integrarse a este mundo de la progracion.</p>
+            <h3>¿Para que sirve las programacion?</h3>
+            <p>Los conocimientos básicos de programación pueden ayudarte a construir un camino hacia una multitud de carreras: desarrollo web, desarrollo de juegos, aprendizaje automático, ciencia de datos y mucho más</p>
+            <a href="#" class="btn"> Leer Mas <i class="fas fa-angle-double-right"></i> </a>
+        </header>
+        <!--NEWS CARDS-->
+        <div class="news cards">
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="JAVASCRIPT">
+                <h4>JAVASCRIPT</h4>
+                <p>Como programar con JAVASCRIPT, aqui te explico como hacerlo desde cero.</p>
+                <a href="#" class="btn">Ver Mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="HTML">
+                <h4>HTML</h4>
+                <p>Como programar con HTML , aqui te explico como hacerlo desde cero.</p>
+                <a href="#" class="btn">Ver Mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPkAybirxHaZ1C7Tb4kdz3_SFWU9VFUzQ99w&usqp=CAU" alt="CSS">
+                <h4>CSS</h4>
+                <p>Como programar con CSS, aqui te explico como hacerlo desde cero.</p>
+                <a href="#" class="btn">Ver Mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+        <section class="cards-banner-one">
+            <div class="content">
+                <h5>¿Que es un Programador?</h5>
+                <p>Un programador es aquella persona que elabora programas de computadora, ​ es decir escribe, depura y mantiene el código fuente de un programa informático, que ejecuta el hardware de una computadora, para realizar una tarea determinada.</p>
+                <a href="#" class="btn">Ver Mas<i class=" fas fa-angle-double-right"></i></a>
+            </div>
+
+        </section>
+        <!--NEWS CARDS-->
+        <div class="news cards">
+            <div>
+                <img src="data:image/png;base64,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"
+                    alt="C++">
+                <h4>C++</h4>
+                <p>Como programar con C++, aqui te explico como hacerlo desde cero.</p>
+                <a href="#" class="btn">Ver Mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    alt="PHYTON">
+                <h4>PHYTON</h4>
+                <p>Como programar con PHYTON, aqui te explico como hacerlo desde cero.</p>
+                <a href="#" class="btn">Ver Mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+        <!--NEWS CARDS-->
+        <div class="news cards">
+        </div>
+        <section class="cards-banner-two">
+            <div class="content">
+                <h6>Me Presento</h6>
+                <p>Yo soy estudiante de la Tecnicatura Superior en Programacion de la Universidad Tecnologica de Tucuman, Estoy cursando mi primer año, y voy aprenediendo de a poco lo que es ser un desarrolador.</p>
+                <a href="#"><i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </section>
+        <!-- Follow -->
+        <section class="social">
+            <p>Seguir Bootcamp</p>
+            <div class="links">
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkdin.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TITULO UNO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TITULO DOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TiTULO TRES</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TITULO CUATRO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+                <li>
+                    <a href="#">En construccion</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>Fabian Saavedra Copyright</h3>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
